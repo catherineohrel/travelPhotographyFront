@@ -1,0 +1,29 @@
+.appContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  .navHeader {
+  height: 8vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  }
+  
+  .mainContent {
+    height: 100vh;
+    width: 100vw;
+    // background-color: rgb(50, 238, 229);
+    position: relative;
+    z-index: 0;
+  }
+  
+  .footerFooter {
+    height: 4vh;
+    width: 100vw;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+  }
+}
