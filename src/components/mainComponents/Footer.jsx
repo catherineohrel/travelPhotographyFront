@@ -9,7 +9,7 @@ export default function Footer() {
     <>
       <div className="footerContainer">
         <div className='copyright'>
-          <p>&copy; {currentYear} Cath Ohrel. All rights reserved.</p>
+          <p>&copy; {currentYear} Cath Ohrel | All rights reserved.</p>
         </div>
       </div>
     </>

@@ -3,32 +3,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 80%;
   width: 100%;
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  position: relative;
 
 
   .albumImg {
-    height: 100%;
+    height: 50%;
     width: 100%;
     z-index: 1;
-    position: relative;
+    position: absolute;
   }
 
   .albumTitle {
-    height: 140px;
-    width: 27%;
+    height: 74px;
+    width: 100%;
     position: absolute;
     z-index: 2;
     color: #FFFFFF;
     margin: 0;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
+    // background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

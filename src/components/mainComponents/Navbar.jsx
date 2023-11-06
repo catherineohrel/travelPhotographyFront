@@ -1,12 +1,15 @@
 // import React from 'react'
 import { Link } from 'react-router-dom'
-
+import photoAPI from "../../services/photoApi"
 import logo from "../../assets/images/logo.png"
 
 import "./Navbar.scss"
 import "../../style.scss"
 
 export default function Navbar () {
+  const handleDisconnect = () => {
+    photoAPI .get("./api/auth/logout")
+  }
   return (
     <>
     <div className="navBarContainer">
@@ -28,6 +31,7 @@ export default function Navbar () {
             <Link to="/Contact">
               <option value="">Contact</option>
             </Link></li>
+          
         </ul>
       </div>
     </div>
