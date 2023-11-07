@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { useAuthContext } from "../contexts/authContext"
+import { useAuthContext } from "../../contexts/authContext"
 import { useNavigate } from "react-router-dom"
-import photoAPI from "../services/photoApi"
+import photoAPI from "../../services/photoApi"
 import "./Login.scss"
 
 function Login() {

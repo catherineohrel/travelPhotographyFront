@@ -3,12 +3,12 @@ import { useAuthContext } from './contexts/authContext'
 import ProtectedRoute from './components/mainComponents/ProtectedRoute'
 import Contact from "./pages/Contact"
 import Footer from "./components/mainComponents/Footer"
-import Login from './pages/Login'
+import Login from "../src/components/mainComponents/Login"
 import Navbar from './components/mainComponents/navbar'
 import Gallery from './pages/Gallery'
 import Home from './pages/home'
 import Shop from "./pages/Shop"
-import SignUp from './pages/SignUp'
+import SignUp from '../src/components/mainComponents/SignUp'
 
 import './App.scss'
 
@@ -19,7 +19,7 @@ function App () {
     <>
       <div className='appContainer'>
         <header className='navHeader'>
-          <Navbar />
+            <Navbar />
         </header>
         <main className='mainContent'>
           <Routes>
