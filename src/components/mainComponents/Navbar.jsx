@@ -1,5 +1,5 @@
 // import React from 'react'
-import { Link, NavLink, useNavigate} from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 import { useAuthContext } from "../../contexts/authContext"
 import photoAPI from "../../services/photoApi"
 import logo from "../../assets/images/logo.png"
@@ -7,9 +7,10 @@ import logo from "../../assets/images/logo.png"
 import "./Navbar.scss"
 import "../../style.scss"
 
-export default function Navbar() {
-const navigate = useNavigate()
-const { user, setUser } = useAuthContext()
+export default function Navbar({handleLoginClick, handleSignupClick}) {
+  const navigate = useNavigate()
+  const { user, setUser } = useAuthContext()
+
 
   const handleDisconnect = () => {
     photoAPI .get("./api/auth/logout").then(() => {
@@ -47,11 +48,11 @@ const { user, setUser } = useAuthContext()
             ) : (
               <>
                 <li>
-                  <NavLink to="/login">Login</NavLink>
+                  <a href='#' onClick={handleLoginClick}>Login</a>
                 </li>
-                <li>
-                  <NavLink to="/signup">Sign Up</NavLink>
-                </li>
+                {/* <li>
+                  <a href='#' onClick={handleSignupClick}>Sign Up</a>
+                </li> */}
               </>
             )}
         </ul>
